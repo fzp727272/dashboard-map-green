@@ -1,0 +1,53 @@
+#warehouse-statistics {
+  .statistics-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: $paddingSize;
+    .statistics-row {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+    }
+    .statistics-list {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .unit {
+        font-size: $fontSizeNormal;
+        margin-left: 4px;
+      }
+      .tag {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: $blue;
+        margin-right: $paddingSize /3;
+      }
+
+      .statistics-text-container {
+        flex-direction: column;
+        .statistics-value {
+          color: $white;
+          font-size: $fontSizeMiddle;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+        .statistics-label {
+          font-size: $fontSizeNormal;
+          color: $textLigh;
+          margin-top: $paddingSize /2;
+          margin-left: 28px;
+        }
+      }
+    }
+    .statistics-list-warning {
+      .tag {
+        background: $red;
+      }
+    }
+  }
+}
